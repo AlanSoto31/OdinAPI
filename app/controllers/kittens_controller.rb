@@ -1,15 +1,15 @@
 class KittensController < ApplicationController
     
       def index
-        @Kittens = Kitten.all
+        @kittens = Kitten.all
       end
     
       def show
-        @Kitten = Kitten.find(params[:id])
+        @kitten = Kitten.find(params[:id])
       end
 
       def new
-        @Kitten = Kitten.new
+        @kitten = Kitten.new
       end
     
       def create
@@ -24,15 +24,15 @@ class KittensController < ApplicationController
       end
     
       def update
-        @Kitten = Kitten.find(params[:id])
+        @kitten = Kitten.find(params[:id])
       end
     
       def edit
-        @Kitten = Kitten.find(params[:id])
+        @kitten = Kitten.find(params[:id])
       end
     
       def destroy
-        Kitten = Kitten.find(params[:id])
+        @kitten = Kitten.find(params[:id])
       end
 
       private
